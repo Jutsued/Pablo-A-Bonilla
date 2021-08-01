@@ -1,0 +1,23 @@
+
+#c3 {
+    position: absolute;
+   height: 20%;
+   width: 20%;
+   top: 40%;
+   left: 10%;
+   background-color: transparent;
+  
+   animation-name: cb;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+ }
+ 
+ 
+ @keyframes cb {
+  0%, 100%{
+     left: 20px;
+   }
+   50%{
+     left: calc(100% - 70px);
+   }
+ }
