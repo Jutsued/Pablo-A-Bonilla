@@ -21,7 +21,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="#tech">Tech</a></li>
                   <li><a href="#">Services</a></li>
-                  <li><a href="#" class="selected">Contact</a></li>
+                  <li><a href="#ct" class="selected">Contact</a></li>
                 </ul>
             </div>
           </nav>
@@ -110,7 +110,46 @@
         </div>
             <div id="app"></div>
 
-    <footer> </footer>
+    <footer> 
+      <div class="contact" id="ct">
+        <h4>Get in contact with me</h4>
+      </div>
+      <div class="contact-box">
+
+        
+        <div class="contact-container">
+          <ul>
+            <li> 
+              <a href="tel:%6464190206"> 
+                  <img src="./resources/techs/smartphone-call.png" alt="phone" class="contactLogos"> 
+                <span>(646)-419-0206</span> 
+              </a>
+            </li>
+            <li> 
+              <a href="mailto:%pabloa.bonilla@outlook.com"> 
+                <img src="./resources/techs/email.png" alt="email" class="contactLogos">
+                <span>pabloa.bonilla@outlook.com</span> 
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form">
+        <form action="mailto:pabloa.bonilla@outlook.com"
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailForm">
+          <input type="text" class="input-field" placeholder="Full Name">
+          <input type="text/number" class="input-field" placeholder="Email Address">
+          <input type="number/text" class="input-field" placeholder="Phone">
+          <input type="text/number" class="input-field" placeholder="Subject">
+          <textarea name="" id="" class="input-field"placeholder="Your Message"></textarea>
+          <button class="btn">Send ></button>
+        </form>
+      </div>
+      
+      </div>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
