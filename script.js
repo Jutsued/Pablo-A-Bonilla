@@ -6,33 +6,39 @@ const myProjects = [
     {
         name: 'Tracker',
         link: 'https://jutsued.github.io/ip-address-tracker/',
-        img: './resources/ipImg.jpeg'
+        img: './resources/ipImg.jpeg',
+        sourceCode: 'https://github.com/Jutsued/ip-address-tracker'
     },
     {
-        name: 'Restaurant gadge',
+        name: 'Restaurant-gadge',
         link: 'https://jutsued.github.io/tip-calculator-app/',
-        img: './resources/tipImg.jpeg'
+        img: './resources/tipImg.jpeg',
+        sourceCode: 'https://github.com/Jutsued/tip-calculator-app'
     },
     {
-        name: 'Template Page',
+        name: 'Template-Page',
         link: 'https://jutsued.github.io/sunnyside-agency-landing-page/',
-        img: './resources/pageTemp.jpeg'
+        img: './resources/pageTemp.jpeg',
+        sourceCode: 'https://github.com/Jutsued/sunnyside-agency-landing-page'
     },
     {
         name: 'Countdown',
         link: 'https://jutsued.github.io/Launch-countdown-timer/',
-        img: './resources/CountImg.jpeg'
+        img: './resources/CountImg.jpeg',
+        sourceCode: 'https://github.com/Jutsued/Launch-countdown-timer'
     },
     {
-        name: 'Bouncing Ball',
+        name: 'Bouncing-Ball',
         link: 'https://jutsued.github.io/BounceBall/',
-        img: './resources/game.jpeg'
+        img: './resources/game.jpeg',
+        sourceCode: 'https://github.com/Jutsued/BounceBall'
     },
     {
-        name: 'Movie API',
+        name: 'Movie-API',
         link: 'https://jutsued.github.io/movie-app/',
-        img: './resources/movie.jpeg'
-    },
+        img: './resources/movie.jpeg',
+        sourceCode: 'https://github.com/Jutsued/movie-app'
+    }
 ];
 
 const app = document.getElementById('app');
@@ -40,17 +46,27 @@ const app = document.getElementById('app');
 myProjects.forEach(project => {
     const title = `${project.name}`;
     const imgURL = project.img;
+    
+    const code = `${project.sourceCode}`;
 
-    const projectEl = document.createElement('a');
+    const projectEl = document.createElement('div');
     projectEl.classList.add('project');
-    projectEl.href = project.link;
-    projectEl.target = '_blank';
+    // projectEl.href = project.link;
+    // projectEl.target = '_blank';
 
     projectEl.innerHTML = `
-    <img src="${imgURL}" alt="${title}" id="changer"/>
+    <img src="${imgURL}" alt="${title}"/>
     <p>
         ${title}
     </p>
+    <div class="overtop">
+        <a href="${project.link}" target="_blank">
+             <span>Live Site</span>
+        </a>
+        <a href="${code}" target= "_blank">
+            <span>Sourcecode</span>
+        </a> 
+    </div>
     
     `;
 
@@ -61,5 +77,13 @@ toggleBtn.addEventListener('click', function(){
     navbarLinks.classList.toggle('active')
 });
 
+
+let change = document.querySelectorAll('.overtop');
+change.addEventListener('mouseover', function() {
+    change.style.opacity = 1;
+})
+change.addEventListener('mouseout', function() {
+    change.style.opacity = 0;
+})
 
   
