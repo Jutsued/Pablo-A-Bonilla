@@ -78,12 +78,11 @@ toggleBtn.addEventListener('click', function(){
 });
 
 
-let change = document.querySelectorAll('.overtop');
-change.addEventListener('mouseover', function() {
-    change.style.opacity = 1;
-})
-change.addEventListener('mouseout', function() {
-    change.style.opacity = 0;
-})
+const colorChanger = document.querySelector('.me');
+setInterval(
+    function () {
+      var randomColor = Math.floor(Math.random()*16777215).toString(16);
+      colorChanger.style.borderColor = "#"+randomColor;
+    },4000);
 
   
