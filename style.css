@@ -18,6 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+    background-color: #0d3c6b;
 }
 
 .navbar-links ul {
@@ -60,6 +61,13 @@ body {
     width: 100%;
     background-color: black;
     border-radius: 10px;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .brand-title {
@@ -309,10 +317,6 @@ body {
 .contact-container ul li {
     list-style: none;
     max-width: 100%;
-}
-
-.contact-container ul {
- 
 }
 
 .contact-container span {

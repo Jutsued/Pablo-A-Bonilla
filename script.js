@@ -85,4 +85,17 @@ setInterval(
       colorChanger.style.borderColor = "#"+randomColor;
     },4000);
 
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById('test');
+var stick = header.offsetTop;
+
+function myFunction() {
+    if(window.pageYOffset > stick) {
+        header.classList.add('stick'); 
+    } else {
+        header.classList.remove('stick')
+    }
+}
+
   
