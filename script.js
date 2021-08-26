@@ -4,22 +4,22 @@ const navbarLinks = document.querySelector('.navbar-links');
 
 const myProjects = [
     {
+        name: 'Movie-API',
+        link: 'https://jutsued.github.io/movie-app/',
+        img: './resources/movie.jpeg',
+        sourceCode: 'https://github.com/Jutsued/movie-app'
+    },
+    {
         name: 'Tracker',
         link: 'https://jutsued.github.io/ip-address-tracker/',
         img: './resources/ipImg.jpeg',
         sourceCode: 'https://github.com/Jutsued/ip-address-tracker'
     },
     {
-        name: 'Restaurant-gadge',
-        link: 'https://jutsued.github.io/tip-calculator-app/',
-        img: './resources/tipImg.jpeg',
-        sourceCode: 'https://github.com/Jutsued/tip-calculator-app'
-    },
-    {
-        name: 'Template-Page',
-        link: 'https://jutsued.github.io/sunnyside-agency-landing-page/',
-        img: './resources/pageTemp.jpeg',
-        sourceCode: 'https://github.com/Jutsued/sunnyside-agency-landing-page'
+        name: 'News Website',
+        link: 'https://github.com/Jutsued/News-Website',
+        img: './resources/newswebsite.jpeg',
+        sourceCode: 'https://jutsued.github.io/News-Website/'
     },
     {
         name: 'Countdown',
@@ -28,17 +28,11 @@ const myProjects = [
         sourceCode: 'https://github.com/Jutsued/Launch-countdown-timer'
     },
     {
-        name: 'Bouncing-Ball',
-        link: 'https://jutsued.github.io/BounceBall/',
-        img: './resources/game.jpeg',
-        sourceCode: 'https://github.com/Jutsued/BounceBall'
+        name: 'Template-Page',
+        link: 'https://jutsued.github.io/sunnyside-agency-landing-page/',
+        img: './resources/pageTemp.jpeg',
+        sourceCode: 'https://github.com/Jutsued/sunnyside-agency-landing-page'
     },
-    {
-        name: 'Movie-API',
-        link: 'https://jutsued.github.io/movie-app/',
-        img: './resources/movie.jpeg',
-        sourceCode: 'https://github.com/Jutsued/movie-app'
-    }
 ];
 
 const app = document.getElementById('app');
