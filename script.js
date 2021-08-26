@@ -17,9 +17,9 @@ const myProjects = [
     },
     {
         name: 'News Website',
-        link: 'https://github.com/Jutsued/News-Website',
+        link: 'https://jutsued.github.io/News-Website/',
         img: './resources/newswebsite.jpeg',
-        sourceCode: 'https://jutsued.github.io/News-Website/'
+        sourceCode: 'https://github.com/Jutsued/News-Website' 
     },
     {
         name: 'Countdown',
