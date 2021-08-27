@@ -399,6 +399,7 @@ form{
     border: none;
     color: #fff;
     resize: none;
+    outline: none;
     background-color: #222222;
 }
 
@@ -422,28 +423,26 @@ form{
 }
 
 @media (max-width: 600px) {
-    .contact-box {
-      flex-direction: column;
-    }
-
-    .contact-container a{
-        padding: 0;
-        margin: 10px 0;
-    }
-
-    .contact-container span {
-        padding-left: 10px;
-      }
-
-    .input-field {
-          width: 100%;
-      }
+       footer{
+          grid-template-columns: 1fr;
     
-    textarea.input-field {
-        width: 100%;
-    }
+          grid-template-areas:
+            "header"
+            "side"
+            "main"
+            ;
+        }
+    
+        .contact-container ul {
+            flex-direction: row;
+        }
 
-    .btn {
-        margin: auto;
-    }
+        .contact-container  span {
+            display: none;
+        }
+
+        .contactLogos {
+            width: 25%;
+        }
+    
 }
