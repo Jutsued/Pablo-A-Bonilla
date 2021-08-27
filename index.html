@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="navbar" id="test">
-            <div class="brand-title">Junior Dev</div>
+            <!-- <div class="brand-title">Junior Dev</div> -->
             <a href="#" class="toggle-button">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -18,9 +18,9 @@
             </a>
               <div class="navbar-links">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#tech">Tech</a></li>
-                  <li><a href="#ct" id="selected">Contact</a></li>
+                  <li><a href="index.html" data-text="home">Home</a></li>
+                  <li><a href="#tech" data-text="Tech">Tech</a></li>
+                  <li><a href="#ct" data-text="Contact" id="selected">Contact</a></li>
                 </ul>
             </div>
           </nav>
@@ -30,11 +30,7 @@
     </header>
     <div class="container">
         <div class="about">
-          <div class="myImg">
-            <a href="https://www.linkedin.com/in/pablo-bonilla-999975190/" target="_blank">
-            <img src="./resources/me.JPG" alt="self-portray" class="me">
-          </a>
-          </div>
+
           <div class="aboutMe">
             <p>Hi my name is Pablo Bonilla. I am a new Web Developer who has self-taught himself 
               during mid-pandemic. I like creating websites and making them responsive. Down below 
@@ -115,25 +111,30 @@
       <div class="contact" id="ct">
         <h4>Get in contact with me</h4>
       </div>
-      <div class="contact-box">
+      
         
         <div class="contact-container">
           <ul>
             <li> 
               <a href="tel:%6464190206"> 
-                  <img src="./resources/techs/smartphone-call.png" alt="phone" class="contactLogos"> 
+                  <img src="./resources/techs/smartphone.svg" alt="phone" class="contactLogos"> 
                 <span>(646)-419-0206</span> 
               </a>
             </li>
             <li> 
               <a href="mailto:%pabloa.bonilla@outlook.com"> 
-                <img src="./resources/techs/email.png" alt="email" class="contactLogos">
+                <img src="./resources/techs/email.svg" alt="email" class="contactLogos">
                 <span>pabloa.bonilla@outlook.com</span> 
               </a>
             </li>
             <li>
-              <a href="https://github.com/Jutsued">
-                <img src="./resources/techs/GitHub.png" class="git">
+              <a href="https://github.com/Jutsued"  target="_blank">
+                <img src="./resources/techs/github.svg" class="contactLogos">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/pablo-bonilla-999975190/" target="_blank" >
+                <img src="./resources/techs/linkedin.svg" class="contactLogos">
               </a>
             </li>
           </ul>
@@ -149,11 +150,11 @@
           <input type="number/text" class="input-field" placeholder="Phone">
           <input type="text/number" class="input-field" placeholder="Subject">
           <textarea name="" id="" class="input-field"placeholder="Your Message"></textarea>
-          <button class="btn">Send ></button>
+          <button class="btn">Submit</button>
         </form>
       </div>
       
-      </div>
+      
     </footer>
     <script src="./script.js"></script>
 </body>

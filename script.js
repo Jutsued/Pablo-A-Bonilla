@@ -58,7 +58,7 @@ myProjects.forEach(project => {
              <span>Live Site</span>
         </a>
         <a href="${code}" target= "_blank">
-            <span>Sourcecode</span>
+            <span>Source code</span>
         </a> 
     </div>
     
@@ -72,12 +72,12 @@ toggleBtn.addEventListener('click', function(){
 });
 
 
-const colorChanger = document.querySelector('.me');
-setInterval(
-    function () {
-      var randomColor = Math.floor(Math.random()*16777215).toString(16);
-      colorChanger.style.borderColor = "#"+randomColor;
-    },4000);
+// const colorChanger = document.querySelector('.me');
+// setInterval(
+//     function () {
+//       var randomColor = Math.floor(Math.random()*16777215).toString(16);
+//       colorChanger.style.borderColor = "#"+randomColor;
+//     },4000);
 
 window.onscroll = function() {myFunction()};
 
