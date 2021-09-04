@@ -210,24 +210,50 @@ ul li a:hover:before{
 
 .logos {
     display: flex;
-    width: 300px;
-    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    /* flex-direction: column;
     text-align: center;
-    align-items: center;
+    align-items: center; */
     margin: 20px;
+    transform-style: preserve-3d;
+    animation: animate 15s linear infinite;
 }
 
 .xd {
     border-bottom: solid;
 }
 
+svg:hover 
+{
+    /* animation: step-end; */
+    animation-play-state: paused;
+}
+
+@keyframes animate {
+    0% {
+         transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+   }
+}
+
 .logos svg {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     max-width: 40%;
 
     cursor: pointer;
-    transition: .3s ease;
+    transition: .3s ease; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)* 45deg)) translateZ(400px);
 }
 
 .logos svg:hover {
