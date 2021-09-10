@@ -28,10 +28,10 @@ const myProjects = [
         sourceCode: 'https://github.com/Jutsued/Launch-countdown-timer'
     },
     {
-        name: 'Template-Page',
-        link: 'https://jutsued.github.io/sunnyside-agency-landing-page/',
-        img: './resources/pageTemp.jpeg',
-        sourceCode: 'https://github.com/Jutsued/sunnyside-agency-landing-page'
+        name: 'Tip Calculator',
+        link: 'https://jutsued.github.io/tip-calculator-app/',
+        img: './resources/tipImg.jpeg',
+        sourceCode: 'https://github.com/Jutsued/tip-calculator-app'
     },
 ];
 
