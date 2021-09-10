@@ -4,10 +4,10 @@ const navbarLinks = document.querySelector('.navbar-links');
 
 const myProjects = [
     {
-        name: 'Movie-API',
-        link: 'https://jutsued.github.io/movie-app/',
+        name: 'React-Movie-App',
+        link: 'https://jutsued.github.io/React-Movie-App/',
         img: './resources/movie.jpeg',
-        sourceCode: 'https://github.com/Jutsued/movie-app'
+        sourceCode: 'https://github.com/Jutsued/React-Movie-App'
     },
     {
         name: 'Tracker',
